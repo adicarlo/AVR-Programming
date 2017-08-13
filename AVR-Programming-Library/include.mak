@@ -142,6 +142,10 @@ flash_109: PROGRAMMER_TYPE = avr109
 flash_109: PROGRAMMER_ARGS = -b 9600 -P /dev/ttyUSB0
 flash_109: flash
 
+flash_dragonJTAG: PROGRAMMER_TYPE = dragon_jtag
+flash_dragonJTAG: PROGRAMMER_ARGS =  # Dragon works with no further arguments
+flash_dragonJTAG: flash
+
 ##########------------------------------------------------------##########
 ##########       Fuse settings and suitable defaults            ##########
 ##########------------------------------------------------------##########
